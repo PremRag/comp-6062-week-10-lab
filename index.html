@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 10 Lab</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <input v-model="firstName" type="text" placeholder="firstname">
+        <input v-model="lastName" type="text" placeholder="lastname">
+        <p>Full Name : {{fullName}}</p>
+        <input v-model="quantity" type="number" min="0">
+        <p>Price per item: $10</p>
+        <p>Total Price : {{totalPrice}}</p>
+        <button @click="clearField">Clear Fields</button>
+    </main>
+    <footer>&copy; Prem Rag - 1198030</footer>
+    <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
